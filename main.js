@@ -10,6 +10,7 @@ const app = express()
 connectToDb()
 
 app.use(cors())
+app.use(express.json())
 
 app.use("/users", isAuth, userRouter)
 app.use("/auth", authRouter)
