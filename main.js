@@ -4,7 +4,7 @@ const connectToDb = require("./db/connectToDB")
 const authRouter = require("./auth/auth.route")
 const isAuth = require("./middlewares/isAuth")
 const postRouter = require("./posts/posts.route")
-const cors = Require("cors")
+const cors = require("cors")
 const app = express()
 
 connectToDb()
