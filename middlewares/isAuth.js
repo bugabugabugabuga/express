@@ -10,8 +10,8 @@ const isAuth = async (req, res, next) => {
 
     const [type, token] = headers.split(" ")
     try{
-          const payload = await jwt.verify(token, process.env.JWN_SECRET)
-          req.userId = payload.userId
+        const payload = await jwt.verify(token, process.env.JWT_SECRET)
+        req.userId = payload.userId
 
           next()
     }catch(e){

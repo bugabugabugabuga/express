@@ -21,10 +21,7 @@ app.get("/",  (req, res) => {
     res.send("hello world")
 })
 
-app.listen(3000, () => {
-    console.log("server running on http://localhost:3000");
-    
-})
+module.exports = app; 
 
 
 
